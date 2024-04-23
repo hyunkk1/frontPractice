@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+<!-- 라디오 타입 : 여러 항목 중 하나만 선택 하도록 함-->
+  <label for="apple">사과</label>
+  <input type="radio" name="fruits" id="apple" value="apple">
+  <label for="banana">바나나</label>
+  <input type="radio" name="fruits" id="banana" value="banana">
+  <label for="mango">망고</label>
+  <input type="radio" name="fruits" id="mango" value="mango">
+  <hr />
+  <label for="user-id">아이디(6자리 이상)</label>
+  <input type="text id" id="user-id" placeholder="6자리 이상"/>
+
+  <!-- fieldset 태그로 그룹을 만들면 그룹별로 박스 모양의 테두리가 생김-->
+  <form action="#">
+    <fieldset>
+      <legend>기본 정보</legend>
+      <div>
+        <label for="userid">아이디</label>
+        <input type="text" id="userid" />
+      </div>
+      <div>
+        <label for="pwd">비밀번호</label>
+        <input type="password" id="pwd" />
+      </div>
+    </fieldset>
+    <fieldset>
+      <legend>선택 정보</legend>
+      <div>
+        <label for="age">나이</label>
+        <input type="number" id="age" placeholder="숫자만 입력" />
+      </div>
+      <div>
+        <label for="recom">추천인</label>
+        <input type="text" id="recom" placeholder="없으면 생략" />
+      </div>
+    </fieldset>
+    <fieldset>
+      <legend>블로그 글쓰기</legend>
+      <div>
+        <label for="title">제목</label>
+        <input type="text" id="title" />
+      </div>
+      <div>
+        <label for="desc">내용</label>
+        <textarea id="desc" cols="100" rows="10"></textarea>
+      </div>
+    </fieldset>
+  </form>
+
+</body>
+</html>

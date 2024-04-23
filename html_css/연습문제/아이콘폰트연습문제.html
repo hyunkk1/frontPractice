@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css">
+  <title>Login</title>
+  <style>
+    h2 {
+      text-align: center;
+      font-size: 25px;
+    }
+    form#login {
+      width: 250px;
+      border: 2px solid black;
+      padding: 20px;
+}
+     button {
+      text-align: center;
+}
+
+  </style>
+</head>
+<body>
+  <form action="#" id="login">
+    <h2>로그인할거임</h2>
+    <div>
+      <button type="button" class="google-login">
+        <i class="fab fa-google"></i>
+        Log in with Google
+      </button>
+    </div>
+    <p>or</p>
+    <div>
+      <label for="username">
+        <input type="text" id="username" name="username" placeholder="Username">
+      </label>
+      <label for="password">
+        <input type="password" id="password" name="password" placeholder="Password">
+      </label>
+      <button type="submit">
+        Login
+      </button>
+    </div>
+    <a href="#">Forgot your password?</a>
+  </form>
+</body>
+</html>

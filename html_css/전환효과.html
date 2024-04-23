@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>transition-timing-function</title>
+  <style>
+    .box{
+      margin: 50px auto;
+      width: 100px;
+      height: 100px;
+      background-color: #fb5;
+      border: 1px solid #222;
+    }
+    .box:hover {
+      width: 200px;
+      height: 200px;
+      background-color: #f50;
+      transition: all 2s ease-in;
+      transform: rotate(2700deg);
+    }
+  </style>
+</head>
+<body>
+  <div class="box"></div>
+</body>
+</html>

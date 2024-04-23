@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+      margin: 0;
+      position: relative;
+      background-color: aqua;
+      height: 4000px;
+    }
+    .box {
+      width: 100px;
+      height: 100px;
+    }
+    .red-box {
+      background-color: red;
+      position: relative;
+    }
+    .green-box {
+      background-color: green;
+      position: relative;
+      z-index: 1;
+      top: -30px;
+      left: 10px;
+     
+    }
+    .blue-box {
+      background-color: blue;
+      position: absolute;
+      top: 120px;
+    }
+    .footer {
+      height: 30px;
+      width: 100%;
+      background-color: blueviolet;
+      position: relative;
+      top: calc(100vh - 30px);
+      
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      
+    }
+    .footer-desc {
+      font-size: 16px;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <div class="box red-box"></div>
+  <div class="box green-box"></div>
+  <div class="box blue-box"></div>
+  <div class="box footer">여기는 풋터 영역입니다</div>
+</body>
+</html>

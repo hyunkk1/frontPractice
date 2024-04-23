@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .movie {
+      background-color: antiquewhite;
+      font-size: 24px;
+    }
+    .tv {
+      background-color: blue;
+      font-size: 20px;
+    }
+  </style>
+</head>
+<body>
+  <!-- HTML의 모든 요소는 해당요소가 웹브라우저에서 어떻게 보이는가를 결정짓는 display 속성을 가짐-->
+  <!-- 대표적인 속성은 block과 inline이 있음-->
+  <!-- 블록 타입의 요소(라인을 차지) : p, div, h1 ~ h6, ul, ol, form -->
+<div class="movie">
+  <p>영화 소개</p>
+  <p>영화를 소개하는 페이지 입니다</p>
+</div>
+<div style="background-color: gray;">
+  <p>TV 프로그램 소개</p>
+  <p>TV 프로그램을 소개하는 페이지 입니다</p>
+</div>
+<!-- 인라인 타입의 요소 : 컨텐츠 영역만 차지-->
+<!-- span, a, img, strong, em, input, button-->
+<p style="background-color: aqua;">
+  <span style="background-color: gray; color:orange;">span태그</span>
+  는 display속성값이 inline 요소 입니다.
+</p>
+<p style="text-align: center;">글자를 중간 정렬 하겠습니다</p>
+</body>
+</html>

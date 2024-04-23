@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+ <style>
+  
+  .parent {
+    font-size: 1em;
+    color: rgba(255,255,255);
+    background-color: rgba(0,0,0,0.8);
+  }
+  .child {
+    font-size: 1.2em;
+    color: red;
+  }
+  .child-to-child {
+    font-size: 1.2em;
+    color:#00f;
+  }
+ </style>
+</head>
+<body>
+  <div class="parent">
+    <p>부모의 폰트 크기 입니다.</p>
+    <div>
+      <div class="child">
+        <p>자식의 폰트 크기 입니다.</p>
+        <div class="child-to-child">
+          <p>자식의 자식 폰트 입니다.</p>
+        </div>
+
+      </div>
+  </div>
+
+</body>
+</html>

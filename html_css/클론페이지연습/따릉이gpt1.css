@@ -1,0 +1,94 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+header {
+  background-color: #44B49D;
+  color: white;
+  padding: 10px 0;
+}
+
+.logo {
+  float: left;
+}
+
+.logo img {
+  width: 150px; /* 로고 이미지 크기에 맞게 조정 */
+}
+
+nav {
+  float: right;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+main_image {
+  background-image: url('../클론페이지연습/따릉이 이미지/배경이미지.jpg'); /* 배경 이미지 경로 설정 */
+  background-size: cover;
+  height: 500px; /* 원하는 높이로 설정 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content {
+  text-align: center;
+  color: white;
+}
+
+.login_box {
+  background-color: rgba(255, 255, 255, 0.8); /* 투명도 조절 */
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.main_tab {
+  background-color: #44B49D;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.main_tab ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.main_tab ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.main_tab ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+footer {
+  background-color: #f2f2f2;
+  padding: 20px 0;
+  text-align: center;
+}

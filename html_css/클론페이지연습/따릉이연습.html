@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>서울자전거 따릉이 - 무인 대여서비스</title>
+ 
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  
+  <header>
+    <div class="container">
+      <div class="logo">
+        <div class="logo"><a href="/main.do"><img src="../클론페이지연습/따릉이 이미지/따릉이로고.png" alt="서울자전거 따릉이">
+        </a>
+      </div>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#">사업소개</a></li>
+          <li><a href="#">대여소 조회</a></li>
+          <li><a href="#">이용권 구매</a></li>
+          <li><a href="#">문의/FAQ</a></li>
+          <li><a href="#">공지사항</a></li>
+          <li><a href="#">안전수칙</a></li>
+        </ul>
+      </nav>
+    </div>
+    
+  </header>
+  
+  <p>
+    <section>
+      <div class="main_image">
+        <div class="content">
+          <a href=""></a><img src="../클론페이지연습/따릉이 이미지/메인.png" alt="">
+            <div class="login_box">
+                <form name="loginForm" action="/j_spring_security_check" method="POST">
+                  <fieldset>
+                    <legend>로그인</legend>
+                    
+                    <p>로그인 후 자전거 대여하실 수 있습니다.</p>
+                    <div>
+                      <input class="inputlogin" onkeypress="" name="j_username" id="j_username" value="" size="18" maxlength="20" placeholder="아이디">
+                    </div>
+                    <div>
+                      <input class="inputlogin" onkeypress="enterKey()" name="j_password" value="" type="password" id="mempw" size="18" maxlength="20" placeholder="비밀번호">
+                    </div>
+                    <div class="autologin">
+                      <input type="checkbox" name="loginchk" id="logchk" title="자동로그인" value="true">
+                      <label for="logchk"><span></span>자동로그인</label>
+                    </div> 
+                    <a href="/memberIdFind.do" class="idpw_srch">아이디</a>/<a href="memberPwFind.do" class="idpw_srch">비밀번호찾기</a>
+                    <div class="btn">
+                      <input class="btn_login" type="button" title="로그인" value="로그인" id="loginBtn" onclick="loginFnc()">
+                    </div>
+                    <a href="https://www.bikeseoul.com:457/main.do?lang=ko" class="nonmember">비회원<img src="/클론페이지연습/따릉이 이미지/ic_nomember.jpg" alt=""></a>
+                    <a href="https://www.bikeseoul.com:457/main.do?lang=en" class="foreigner">foreigner<img src="/클론페이지연습/따릉이 이미지/ic_foreigner.jpg" alt=""></a>
+                    
+                    <input type="hidden" id="ostype" name="appOsType" value="web"> 
+                    <input type="hidden" id="usrDeviceId" name="usrDeviceId"> 
+                  </fieldset> 
+                </form>
+              </div>
+              </div>    
+      </div>
+  
+    </section>
+
+    <section>
+      <div class="main_tab">
+        <ul>
+          <li class="mt_1"><img src="./따릉이 이미지/mainTab_1on.gif"><a href="/app/use/moveUseMenuRentCpn.do">대여방법</a></li>
+          <li class="mt_2"><img src="./따릉이 이미지/mainTab_2on.gif"><a href="/info/infoDuty.do">반납방법</a></li>
+          <li class="mt_3"><img src="./따릉이 이미지/mainTab_3.gif"><a href="/app/station/moveStationRealtimeStatus.do">대여소현황</a></li>
+          <li class="mt_4"><img src="./따릉이 이미지/mainTab_4on.gif"><a href="/info/infoCoupon.do">이용요금안내</a></li>
+          <!--li class="mt_4"><a href="/app/mybike/favoriteStation.do">대여하기</a></li-->
+        </ul>
+      </div>
+    </section>
+  </p>
+  <!-- 여기에 내용 추가 -->
+  
+  
+  <!--                               수정중-->
+  
+  <section>
+    <div class="tower">
+      <h1><img src="./따릉이 이미지/tower.png" 
+        alt="자전거와 함께하는 건강한 도시, 세계적인 자전거 도시 서울" 
+        class=" ls-is-cached lazyloaded"></h1>
+    </div>
+  </section>
+  
+  <section>
+    <div class="bikeseoul_bn"><img src="./따릉이 이미지/main_img_02.jpg" alt=""></div>
+  </section>
+  
+  <section>
+<div>
+     <div class="info"><img src="./따릉이 이미지/이미지.png" alt=""></div>
+</div>
+  </section>
+
+  <section>
+  <div>
+    <div class="rental"><img src="./따릉이 이미지/대여소.png" alt=""></div>
+  </div>
+  </section>
+
+  <section>
+      <div class="meta">
+      <a href="https://www.roblox.com/ko/games/7594841232/seoulbike">
+        <img src="./따릉이 이미지/메타링크.jpg" alt="">
+      </a>
+    </div>
+  </section>
+
+  <section>
+      <div class="app">
+        <img src="./따릉이 이미지/따릉이앱.png" alt="">
+      </div>
+  
+  </section>
+
+
+
+  <footer>
+    <div class="container">
+      <p>&copy; 서울특별시 중구 세종대로 110 서울특별시 대표자 오세훈, Tel : 1599-0120 (사업자등록번호 : 104-83-00469) 우편번호 04524
+        <br>
+        COPYRIGHT C 2018 bikeseoul ALL RIGHTS RESERVED.
+      </p>
+    </div>
+  </footer>
+</body>
+</html>

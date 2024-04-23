@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    h1 ~ h3 {
+    color: red;
+  }
+  h1::after {
+    content:"★";
+    color: red;
+  }
+  a:link {
+    color: orange;
+}
+a:visited {
+  color: green;
+}
+button {
+  width: 100px;
+  height: 100px;
+}
+button:active{
+  width: 200px;
+  height: 200px;
+  background-color: red;
+  transition: all 1s ease-in;
+}
+button:hover{
+  width: 200px;
+  height: 200px;
+  background-color: greenyellow;
+  transition: all 1s ease-in;
+}
+input:focus {
+  background-color: red;
+}
+input:disabled {
+  background-color: darkgray;
+}
+  </style>
+</head>
+<body>
+  <!-- 인접 형제 선택자 : + 기호를 사용해 인접한 형제 요소 선택-->
+  <!-- 일반 형제 선택자 : ~ -->
+  <!-- 가상 요소 선택자 : ::before, ::after, ::first-line-->
+  <!-- 동적 가상 클래스 선택자 : :hover(마우스 올리는 동작), :active(마우스 클릭)-->
+  <!-- 입력 요소 가상 선택자-->
+  <h1>Heading</h1>
+  <a href="https://www.naver.com">네이버</a>
+  <a href="https://www.google.co.kr">구글</a>
+  <a href="https://kakao.com">카카오</a>
+  <button>버튼</button>
+  <label for="in">입력<input type="text" id="in"></label>
+  <label for="in2">입력 비활성화</label>
+  <input type="text" id="in2"disabled />
+</body>
+</html>
