@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+   
+    button.Green {
+      background-color: green;
+    }
+    button.Orange {
+      background-color: orange;
+    }
+    button.Purple {
+      background-color: purple;
+    }
+  </style>
+</head>
+<body>
+  <form id="form">
+    <input
+    type="text"
+    id="input_box"
+    onfocus="focusEvent()"
+    onblur="blurEvent()"
+    />
+  </form>
+  <button class onclick="changeColor('green')">Green</button>
+  <button class onclick="changeColor('orange')">Orange</button>
+  <button class onclick="changeColor('purple')">Purple</button>
+
+  <script>
+    function changeColor(color) {
+      document.getElementById('form').style.backgroundColor = color;
+    }
+
+  </script>
+</body>
+</html>
