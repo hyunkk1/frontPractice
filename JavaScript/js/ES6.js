@@ -21,11 +21,12 @@ const arr33 = [...arr11, ...arr22];
 console.log(arr33);
 
 // 객체에서의 전개연산자
-const obj1 = {x:1, y:2};
-const obj2 = {z:3, w:4};
-const obj3 = {...obj1, ...obj2};
-const obj4 = {...obj3, w: 100};
-console.log(obj3);
-console.log(obj4);
+const member = {
+  name: "kim",
+  age: 20,
+  addr: "서울"
+};
 
+const member2 = {...member, addr: "경기도 수원시"};
+console.log(member);
 
