@@ -11,7 +11,7 @@ const Section = (props) => {
     <>
       <Heading text={props.title} />
       <Paragraph text={props.content} />
-      <img src={props.imgUrl} alt={props.imgAlt} />
+      <img src={props.imageUrl} alt={props.imgAlt} />
     </>
   );
 };

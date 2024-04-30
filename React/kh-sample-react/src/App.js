@@ -8,27 +8,18 @@ import "./App.css";
 
 // import Greeting from "./Greeting";
 // import Welcome from "./Welcome";
-import Section from "./Section";
-import MyComponent from "./MyComponent";
+// import Section from "./Section";
+// import MyComponent from "./MyComponent";
+// import imageSrc from "./기아1등.png";
+// import Say from ".Say";
+import Clock from "./Clock";
 
 // 컴포넌트의 합성
 function App() {
   return (
     <>
-      <Section
-        title="스포츠"
-        content="오늘의 프로야구는 기아가 1등 입니다."
-        imgUrl="./기아1등.png"
-        imgAlt="야구 이미지"
-      />
-      <Section title="정치" content="오늘은 영수 회담이 진행 중 입니다." />
-      <hr />
-      <MyComponent name="김" age={20} />
-      <MyComponent name="이" />
-      <MyComponent age={33} />
-      <MyComponent>
-        <h1>여기는 KH입니다.</h1>
-      </MyComponent>
+      <Clock></Clock>
+      <useEffect></useEffect>
     </>
   );
 }
