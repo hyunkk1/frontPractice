@@ -12,14 +12,16 @@ import "./App.css";
 // import MyComponent from "./MyComponent";
 // import imageSrc from "./기아1등.png";
 // import Say from ".Say";
-import Clock from "./Clock";
-import EventPractice from "./EventPractice";
+// import Clock from "./Clock";
+// import EventPractice from "./EventPractice";
+import FruitSelect from "./FruitSelect";
+import Table from "./Table";
 
 // 컴포넌트의 합성
 function App() {
   return (
     <>
-      <EventPractice />
+      <Table />
     </>
   );
 }

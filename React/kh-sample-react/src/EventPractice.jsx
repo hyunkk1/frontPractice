@@ -1,4 +1,5 @@
 import { useState } from "react";
+import FruitSelect from "./FruitSelect";
 
 const EventPractice = () => {
   const [message, setMessage] = useState("");
