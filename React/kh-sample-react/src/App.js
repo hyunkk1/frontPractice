@@ -13,13 +13,13 @@ import "./App.css";
 // import imageSrc from "./기아1등.png";
 // import Say from ".Say";
 import Clock from "./Clock";
+import EventPractice from "./EventPractice";
 
 // 컴포넌트의 합성
 function App() {
   return (
     <>
-      <Clock></Clock>
-      <useEffect></useEffect>
+      <EventPractice />
     </>
   );
 }
