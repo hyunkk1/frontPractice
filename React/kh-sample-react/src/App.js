@@ -14,14 +14,15 @@ import "./App.css";
 // import Say from ".Say";
 // import Clock from "./Clock";
 // import EventPractice from "./EventPractice";
-import FruitSelect from "./FruitSelect";
-import Table from "./Table";
+// import FruitSelect from "./FruitSelect";
+// import Table from "./Table";
+import Greeting1 from "./그리팅연습";
 
 // 컴포넌트의 합성
 function App() {
   return (
     <>
-      <Table />
+      <Greeting1 />
     </>
   );
 }

@@ -11,6 +11,7 @@ const Table = () => {
   const [mapData, setMapData] = useState("");
 
   useEffect(() => {
+    // 서버 통신 구간
     setMapData(data);
   }, []);
 
