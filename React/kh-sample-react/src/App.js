@@ -22,7 +22,7 @@ import Table1 from "./테이블연습";
 function App() {
   return (
     <>
-      <table1 />
+      <Table1 />
     </>
   );
 }
