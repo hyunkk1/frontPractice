@@ -18,13 +18,14 @@ import "./App.css";
 // import FruitSelect from "./FruitSelect";
 // import Greeting1 from "./그리팅연습";
 // import Table1 from "./테이블연습";
-import TodoList from "./TodoList";
+// import TodoList from "./TodoList";
+import CreateRef from "./Ref";
 
 // 컴포넌트의 합성
 function App() {
   return (
     <>
-      <TodoList></TodoList>
+      <CreateRef />
     </>
   );
 }
