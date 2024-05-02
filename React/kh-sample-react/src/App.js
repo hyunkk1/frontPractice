@@ -19,13 +19,16 @@ import "./App.css";
 // import Greeting1 from "./그리팅연습";
 // import Table1 from "./테이블연습";
 // import TodoList from "./TodoList";
-import CreateRef from "./Ref";
+// import CreateRef from "./Ref";
+// import HookCnt from "./Hokks1";
+// import NameCard from "./연습문제1";
+import ExComponent from "./UserRef2";
 
 // 컴포넌트의 합성
 function App() {
   return (
     <>
-      <CreateRef />
+      <ExComponent />
     </>
   );
 }
