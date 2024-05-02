@@ -1,5 +1,5 @@
 import "./App.css";
-import UserList from "./UserList";
+// import UserList from "./UserList";
 // JSX란? JavaScript에 XML 추가 확장한 문법
 // html 태그 사용 시 반드시 닫힘 태그가 존재해야 함
 // 컴포넌트가 반환 될때 태그는 한개 이어야 함
@@ -18,12 +18,13 @@ import UserList from "./UserList";
 // import FruitSelect from "./FruitSelect";
 // import Greeting1 from "./그리팅연습";
 // import Table1 from "./테이블연습";
+import TodoList from "./TodoList";
 
 // 컴포넌트의 합성
 function App() {
   return (
     <>
-      <UserList></UserList>
+      <TodoList></TodoList>
     </>
   );
 }
