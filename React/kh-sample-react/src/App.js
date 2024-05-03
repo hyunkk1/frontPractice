@@ -1,4 +1,6 @@
 import "./App.css";
+import ReducerCnt from "./UseReducer";
+
 // import UserList from "./UserList";
 // JSX란? JavaScript에 XML 추가 확장한 문법
 // html 태그 사용 시 반드시 닫힘 태그가 존재해야 함
@@ -23,13 +25,14 @@ import "./App.css";
 // import HookCnt from "./Hokks1";
 // import NameCard from "./연습문제1";
 // import ExComponent from "./UserRef2";
-import Info from "./UseEffect.jsx";
+// import Info from "./UseEffect.jsx";import reducer from "./UseReducer";
+import reducer from "./UseReducer";
 
 // 컴포넌트의 합성
 function App() {
   return (
     <>
-      <Info></Info>
+      <ReducerCnt />
     </>
   );
 }
