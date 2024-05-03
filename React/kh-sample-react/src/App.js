@@ -22,13 +22,14 @@ import "./App.css";
 // import CreateRef from "./Ref";
 // import HookCnt from "./Hokks1";
 // import NameCard from "./연습문제1";
-import ExComponent from "./UserRef2";
+// import ExComponent from "./UserRef2";
+import Info from "./UseEffect.jsx";
 
 // 컴포넌트의 합성
 function App() {
   return (
     <>
-      <ExComponent />
+      <Info></Info>
     </>
   );
 }
