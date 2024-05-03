@@ -17,7 +17,7 @@ const Average = () => {
     const nextList = list.concat(parseInt(number));
     setList(nextList);
     setNumber("");
-  }, []);
+  }, [number, list]);
   const avg = useMemo(() => getAverage(list), [list]);
 
   return (
