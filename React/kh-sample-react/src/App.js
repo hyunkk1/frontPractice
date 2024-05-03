@@ -26,13 +26,13 @@ import ReducerCnt from "./UseReducer";
 // import NameCard from "./연습문제1";
 // import ExComponent from "./UserRef2";
 // import Info from "./UseEffect.jsx";import reducer from "./UseReducer";
-import reducer from "./UseReducer";
+import Average from "./UseMemo";
 
 // 컴포넌트의 합성
 function App() {
   return (
     <>
-      <ReducerCnt />
+      <Average />
     </>
   );
 }
