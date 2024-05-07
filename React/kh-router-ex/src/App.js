@@ -7,11 +7,13 @@ import Age from "./pages/Age";
 import Articles from "./pages/Articles";
 import Article from "./pages/Article";
 import Layout from "./Layout";
+import Login from "./pages/Login";
 
 function App() {
   return (
     <Router>
       <Routes>
+        <Route path="/Login" element={<Login />} />
         <Route element={<Layout />}>
           <Route path="/" element={<Home />} />
           <Route path="/About" element={<About />} />
