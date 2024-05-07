@@ -19,6 +19,9 @@ const Home = () => {
       <p>
         <Link to={`/age/${age}`}>나이 전달 하기</Link>
       </p>
+      <p>
+        <Link to="/articles">게시판 목록</Link>
+      </p>
     </>
   );
 };

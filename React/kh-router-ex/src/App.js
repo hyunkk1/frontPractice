@@ -4,15 +4,23 @@ import About from "./pages/About";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Profile from "./pages/Profile";
 import Age from "./pages/Age";
+import Articles from "./pages/Articles";
+import Article from "./pages/Article";
+import Layout from "./Layout";
 
 function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/About" element={<About />} />
-        <Route path="/profiles/:name" element={<Profile />} />
-        <Route path="/age/:age" element={<Age />} />
+        <Route element={<Layout />}>
+          <Route path="/" element={<Home />} />
+          <Route path="/About" element={<About />} />
+          <Route path="/profiles/:name" element={<Profile />} />
+          <Route path="/age/:age" element={<Age />} />
+        </Route>
+        <Route path="/articles" element={<Articles />}>
+          <Route path=":id" element={<Article />} />
+        </Route>
       </Routes>
     </Router>
   );
