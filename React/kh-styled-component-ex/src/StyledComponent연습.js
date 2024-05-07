@@ -5,12 +5,14 @@ const Container = styled.div`
   display: flex;
   width: 500px;
   margin: 10px auto;
+  justify-content: center;
 `;
 
 const Button = styled.div`
   margin: 2px;
   display: flex;
   justify-content: center;
+  align-items: center;
   border: 1px solid #ccc;
   padding: 10px 16px;
   color: white;
@@ -30,7 +32,7 @@ const Button = styled.div`
 `;
 
 const ColorBox = styled.div`
-  width: 100%;
+  width: 50%;
   height: 300px;
   border: 2px solid #ccc;
   margin: 10px auto;
