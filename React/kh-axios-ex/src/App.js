@@ -9,18 +9,21 @@ import Home from "./pages/Home";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import UserStore from "./context/UserStore";
 import ImageUploader from "./ImageUploader";
+import WithdrawButton from "./infocut";
 
 function App() {
   return (
-    <UserStore>
-      <Router>
-        <Routes>
-          <Route path="/" element={<ImageUploader />} />
-          <Route path="/Signup" element={<Signup />} />
-          <Route path="/Home" element={<Home />} />
-        </Routes>
-      </Router>
-    </UserStore>
+    <></>
+
+    // <UserStore>
+    //   <Router>
+    //     <Routes>
+    //       <Route path="/" element={<ImageUploader />} />
+    //       <Route path="/Signup" element={<Signup />} />
+    //       <Route path="/Home" element={<Home />} />
+    //     </Routes>
+    //   </Router>
+    // </UserStore>
   );
 }
 
