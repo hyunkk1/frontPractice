@@ -1,17 +1,22 @@
 import React, { useEffect, useState } from "react";
 
 const User = {
-  email: "test@test.com",
-  pw: "test123@",
+  email: "test@naver.com",
+  pw: "test1234!",
 };
 
-export default function Login() {
+function Login() {
   const [email, setEmail] = useState("");
   const [pw, setPw] = useState("");
 
   const [emailValid, setEmailValid] = useState(false);
   const [pwValid, setPwValid] = useState(false);
   const [notAllow, setNotAllow] = useState(true);
+
+  const Clear = () => {
+    setEmail("");
+    setPw("");
+  };
 
   useEffect(() => {
     if (emailValid && pwValid) {
@@ -42,7 +47,7 @@ export default function Login() {
       setPwValid(false);
     }
   };
-
+  // 확인버튼
   const onClickConfirmButton = () => {
     if (email === User.email && pw === User.pw) {
       alert("로그인에 성공했습니다.");
@@ -53,12 +58,8 @@ export default function Login() {
 
   return (
     <div className="page">
-      <div className="titleWrap">
-        이메일과 비밀번호를
-        <br />
-        입력해주세요
-      </div>
-
+      <div className="titleWrap">이메일과 비밀번호를 입력해주세요</div>
+      <br />
       <div className="contentWrap">
         <div className="inputTitle">이메일 주소</div>
         <div className="inputWrap">
@@ -88,6 +89,13 @@ export default function Login() {
             onChange={handlePw}
           />
         </div>
+
+        <div>
+          <button onClick={Clear} className="ClearButton">
+            초기화
+          </button>
+        </div>
+
         <div className="errorMessageWrap">
           {!pwValid && pw.length > 0 && (
             <div>영문, 숫자, 특수문자 포함 8자 이상 입력해주세요.</div>
@@ -107,3 +115,4 @@ export default function Login() {
     </div>
   );
 }
+export default Login;

@@ -1,11 +1,7 @@
 import Login from "./Login";
 
 function App() {
-  return (
-    <div>
-      <Login />
-    </div>
-  );
+  return <Login />;
 }
 
 export default App;
